@@ -172,6 +172,7 @@ class ScenarioDetector:
         :param list predict_class: задетектированные на кадре объекты
         :param list res: список из True/False полученного объекта последовательности
         :param set diff_classes: все предсказанные классы
+        :param dict number_correct_mistakes: словарь из классов и количества допустимых ошибок
         :return:
         """
         sequence = self.sequence_of_actions
@@ -191,6 +192,7 @@ class ScenarioDetector:
             res.append(0)
         else:
             number_correct_mistakes[sequence[class_number]] -= 1
+            print(f'mistake in {sequence[class_number]}')
             # res.append(1)
         if number_correct_mistakes[sequence[class_number]] < 0:
             res.append(1)
@@ -201,8 +203,9 @@ class ScenarioDetector:
         """
         Трекинг видео.
         :param path_to_video:
-        :return:
+        :return: корректность последовательности
         """
+        global response
         class_number = 0
         res = []
         diff_classes = set()
@@ -261,11 +264,11 @@ class ScenarioDetector:
         cap.release()
         out.release()
         cv2.destroyAllWindows()
-        return
+        return response
 
-
+#
 # MODEL_DATE = '20200711'
 # MODEL_NAME = 'centernet_hg104_1024x1024_coco17_tpu-32'
-# actions = ['cup', 'person', 'laptop']
+# actions = ['laptop', 'cup', 'person']
 # sc = ScenarioDetector(MODEL_NAME, MODEL_DATE, actions)
-# sc.run_video('output.avi')
+# sc.run_video('scenario/test_video.mp4')

@@ -9,7 +9,7 @@ with open('required.txt') as f:
 
 setup_args = dict(
     name='auto_OD',
-    version='0.1.7',
+    version='0.2',
     description='Automatic Object Detection with Tensorflow',
     long_description_content_type="text/markdown",
     long_description=readme,

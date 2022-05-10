@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: auto-OD
-Version: 0.1.7
+Version: 0.2
 Summary: Automatic Object Detection with Tensorflow
-Home-page: https://github.com/elina-chertova/tensorflow-2-object-detection.git
+Home-page: https://github.com/elina-chertova/auto_OD.git
 Author: Elina Chertova
 Author-email: elas.2015@mail.ru
 License: MIT
@@ -33,6 +33,11 @@ Description-Content-Type: text/markdown
 * TensorFlow >= 2.5, <=2.8
 
 
+Установка пакета
+----------------
+```shell script
+    pip install auto-OD
+```
 
 Установка необходимых модулей
 -----------------------------
@@ -43,11 +48,9 @@ Description-Content-Type: text/markdown
 
 Репозиторий
 -----------
-Ссылка на репозиторий с кодом и зависимостями - https://github.com/elina-chertova/tensorflow-2-object-detection
+Ссылка на репозиторий с кодом и зависимостями - https://github.com/elina-chertova/auto_OD.git
 
-```shell script
-    pip3 install -r requirements.txt
-```
+
 Установка Object Detection
 --------------------------
 
