@@ -19,7 +19,7 @@ setup_args = dict(
     author_email='elas.2015@mail.ru',
     keywords=['Tensorflow', 'Object Detection'],
     package_data={'auto_OD': ['All_Models']},
-    url='https://github.com/elina-chertova/tensorflow-2-object-detection.git',
+    url='https://github.com/elina-chertova/auto_OD.git',
     include_package_data=True
 )
 

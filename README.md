@@ -36,8 +36,7 @@
 
 Репозиторий
 -----------
-Ссылка на репозиторий с кодом и зависимостями - https://github.com/elina-chertova/tensorflow-2-object-detection
-
+Ссылка на репозиторий с кодом и зависимостями - https://github.com/elina-chertova/auto_OD.git
 
 Установка Object Detection
 --------------------------
