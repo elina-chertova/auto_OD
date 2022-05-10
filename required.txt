@@ -1,0 +1,11 @@
+split-folders
+scikit-image
+folium==0.2.1
+jupyter
+imageio
+ipython==5.5.0
+ipython-genutils==0.2.0
+ipython-sql==0.3.9
+tf_slim>=1.1.0
+sentencepiece
+sacrebleu
